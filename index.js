@@ -57,19 +57,26 @@ moment.fn.businessDiff = function (param) {
 
 
   var daysBetween = 0;
+  let isSame = start.isSame(end,'day')
 
-  if (start.isSame(end,'day')) {
-
+  if (isSame) {
     return 1;
   }
 
-  while (start < end) {
+
+
+  while (isSame==false) {
 
     if (start.isBusinessDay()) {
       daysBetween++;
     }
     start.add(1, 'd');
+    isSame = start.isSame(end,'day')
   }
+
+  if(isSame==true && start.isBusinessDay())
+    daysBetween++;
+
 
   return daysBetween;
 };
