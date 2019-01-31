@@ -1,17 +1,41 @@
 {
-  "name": "moment-business-days",
-  "version": "1.0.6",
-  "description": "MomentJS plugin to use business days ",
-  "main": "index.js",
-  "types": "./index.d.ts",
-  "scripts": {
-    "test": "mocha tests/*",
-    "node-test": "node ./test.js"
-  },
-  "repository": {
+  "_from": "github:themediaway/moment-business-days",
+  "_id": "moment-business-days@1.0.6",
+  "_inBundle": false,
+  "_location": "/moment-business-days",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "git://github.com/kalmecak/moment-business-days.git"
+    "raw": "themediaway/moment-business-days",
+    "rawSpec": "themediaway/moment-business-days",
+    "saveSpec": "github:themediaway/moment-business-days",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:themediaway/moment-business-days#7de8b994504b2b332847d892666d89e1573c2bea",
+  "_spec": "themediaway/moment-business-days",
+  "_where": "/var/www/wiveez-react",
+  "author": {
+    "name": "Christian Rodriguez Cisneros",
+    "email": "rcchristiane@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kalmecak/moment-business-days/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "MomentJS plugin to use business days ",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "moment": "2.x.x"
+  },
+  "engine": "node >= 0.10.26",
+  "homepage": "https://github.com/kalmecak/moment-business-days",
   "keywords": [
     "moment",
     "momentjs",
@@ -19,19 +43,20 @@
     "days",
     "pluin"
   ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "moment-business-days",
   "peerDependencies": {
     "moment": "2.x.x"
   },
-  "engine": "node >= 0.10.26",
-  "author": "Christian Rodriguez Cisneros <rcchristiane@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kalmecak/moment-business-days/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kalmecak/moment-business-days.git"
   },
-  "homepage": "https://github.com/kalmecak/moment-business-days",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.4.1",
-    "moment": "2.x.x"
-  }
+  "scripts": {
+    "node-test": "node ./test.js",
+    "test": "mocha tests/*"
+  },
+  "types": "./index.d.ts",
+  "version": "1.0.6"
 }
