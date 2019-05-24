@@ -55,7 +55,7 @@ moment.fn.businessDiff = function (param) {
   var end = d2 > d1 ? d2 : d1;
 
   var daysBetween = 0;
-  var isSameDay = start.isSame(end,'day')
+  var isSameDay = start.isSame(end,'day');
 
   if (isSameDay) {
     return 1;
@@ -66,7 +66,7 @@ moment.fn.businessDiff = function (param) {
       daysBetween++;
     }
     start.add(1, 'd');
-    isSameDay = start.isSame(end,'day')
+    isSameDay = start.isSame(end,'day');
   }
 
   if (isSameDay && start.isBusinessDay()) {
